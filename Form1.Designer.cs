@@ -161,8 +161,8 @@ namespace Perceptron
             // labelW0
             // 
             this.labelW0.AutoSize = true;
-            this.labelW0.Location = new System.Drawing.Point(541, 196);
-            this.labelW0.MaximumSize = new System.Drawing.Size(50, 13);
+            this.labelW0.Location = new System.Drawing.Point(584, 191);
+            this.labelW0.MaximumSize = new System.Drawing.Size(150, 13);
             this.labelW0.MinimumSize = new System.Drawing.Size(50, 13);
             this.labelW0.Name = "labelW0";
             this.labelW0.Size = new System.Drawing.Size(50, 13);
@@ -172,8 +172,8 @@ namespace Perceptron
             // labelW1
             // 
             this.labelW1.AutoSize = true;
-            this.labelW1.Location = new System.Drawing.Point(623, 196);
-            this.labelW1.MaximumSize = new System.Drawing.Size(50, 13);
+            this.labelW1.Location = new System.Drawing.Point(584, 218);
+            this.labelW1.MaximumSize = new System.Drawing.Size(150, 13);
             this.labelW1.MinimumSize = new System.Drawing.Size(50, 13);
             this.labelW1.Name = "labelW1";
             this.labelW1.Size = new System.Drawing.Size(50, 13);
@@ -183,8 +183,8 @@ namespace Perceptron
             // labelW2
             // 
             this.labelW2.AutoSize = true;
-            this.labelW2.Location = new System.Drawing.Point(703, 196);
-            this.labelW2.MaximumSize = new System.Drawing.Size(50, 13);
+            this.labelW2.Location = new System.Drawing.Point(584, 243);
+            this.labelW2.MaximumSize = new System.Drawing.Size(150, 13);
             this.labelW2.MinimumSize = new System.Drawing.Size(50, 13);
             this.labelW2.Name = "labelW2";
             this.labelW2.Size = new System.Drawing.Size(50, 13);
@@ -193,14 +193,10 @@ namespace Perceptron
             // 
             // buttonEvaluar
             // 
-            this.buttonEvaluar.Location = new System.Drawing.Point(608, 234);
+            this.buttonEvaluar.Location = new System.Drawing.Point(0, 0);
             this.buttonEvaluar.Name = "buttonEvaluar";
             this.buttonEvaluar.Size = new System.Drawing.Size(75, 23);
-            this.buttonEvaluar.TabIndex = 8;
-            this.buttonEvaluar.Text = "Evaluar";
-            this.buttonEvaluar.UseVisualStyleBackColor = true;
-            this.buttonEvaluar.Visible = false;
-            this.buttonEvaluar.Click += new System.EventHandler(this.buttonEvaluar_Click);
+            this.buttonEvaluar.TabIndex = 10;
             // 
             // listBoxEntradas
             // 

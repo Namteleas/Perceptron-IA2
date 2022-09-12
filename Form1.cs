@@ -59,9 +59,13 @@ namespace Perceptron
 
         private void mostrarValores()
         {
-            labelW0.Text = per.Pesos[0].ToString();
-            labelW1.Text = per.Pesos[1].ToString();
-            labelW2.Text = per.Pesos[2].ToString();
+            string b = "B: " + per.Pesos[0].ToString();
+            string w0 = "W0: " + per.Pesos[1].ToString();
+            string w1 = "W1: " + per.Pesos[2].ToString();
+
+            labelW0.Text = b;
+            labelW1.Text = w0;
+            labelW2.Text = w1;
         }
         
         private void buttonIniciar_Click(object sender, EventArgs e)
@@ -103,6 +107,7 @@ namespace Perceptron
             else
                 MessageBox.Show("No convirgio");
 
+            mostrarValores();
             buttonEvaluar.Visible = true;
         }
 
@@ -132,25 +137,6 @@ namespace Perceptron
                 g.DrawLine(planoPen, -5 * 100 + 500, y1 * 100 + 500, 5 * 100 + 500, y2 * 100 + 500);
             else
                 g.DrawLine(planoPen, x1 * 100 + 500, -5 * 100 + 500, x2 * 100 + 500, 5 * 100 + 500);
-
-            pictureBoxCanvas.Refresh();
-        }
-
-        void evaluar_Canvas()
-        {
-            float x, y;
-
-            for(float i = 0; i < 1000; i++)    //Y
-                for(float j = 0; j < 1000; j++)  //X
-                {
-                    x = (j - 500) / 100;
-                    y = (i - 500) / 100;
-
-                    if ((per.Pesos[1] * x + per.Pesos[2] * y - per.Pesos[0]) >= 0)
-                        bmpFondo.SetPixel((int)j, (int)i, Color.DimGray);
-                    else
-                        bmpFondo.SetPixel((int)j, (int)i, Color.Violet);
-                }
 
             pictureBoxCanvas.Refresh();
         }
@@ -193,12 +179,6 @@ namespace Perceptron
             }
 
             pictureBoxCanvas.Refresh();
-        }
-
-        private void buttonEvaluar_Click(object sender, EventArgs e)
-        {
-            evaluar_Canvas();
-            dibujarCirculos();
         }
     }
 }
